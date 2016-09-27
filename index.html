@@ -1,0 +1,55 @@
+<html>
+<head>
+<style type="text/css">
+#testcontainer
+{
+font-size:1em;
+padding:7px;
+width:350px;
+height:140px;
+border:1px solid grey;
+overflow:hidden;
+}
+#testcontainer h2
+{
+margin-top:0px;
+margin-bottom:13px;
+}
+#testcontainer p
+{
+padding-left:8px;
+margin-top:0px;
+margin-bottom:0px;
+}
+.ui-widget-header
+{
+text-align:center;
+}
+</style>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+   $("#switcher").themeswitcher({
+      initialText:"Выбрать тему",
+      buttonPreText:"Тема: "
+   });
+
+});
+</script>
+</head>
+<body>
+<div id="switcher"></div>
+<br /><br />
+<div id="testcontainer" class="ui-widget ui-corner-all ui-widget-content">
+<h2 class="ui-widget-header ui-corner-all">Заголовок виджета.</h2>
+<p><b>Содержимое виджета.</b> Для того, чтобы изменить тему оформления щелкните на элементе в верхнем левом углу экрана.</p>
+<p><b>Обратите внимание:</b> из-за особенностей работы нашего редактора код данного предмета не будет работать корректно. 
+Для того, чтобы опробовать виджет themeswitcher создайте HTML файл на Вашем компьютере и скопируйте в него код из примера.</p>
+</div>
+</body>
+</html>
